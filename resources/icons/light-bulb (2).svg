@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40.444" height="56" viewBox="0 0 40.444 56">
+  <g id="light-bulb_2_" data-name="light-bulb (2)" transform="translate(-67.226)">
+    <g id="icon_28_" transform="translate(67.226 0)">
+      <path id="Path_432" data-name="Path 432" d="M196.043,459.929v.493a2.209,2.209,0,0,0,2.207,2.208h6.163a2.209,2.209,0,0,0,2.209-2.209v-.493Z" transform="translate(-181.102 -406.63)" fill="#123f57"/>
+      <path id="Path_433" data-name="Path 433" d="M166.594,390.84v5.182a3.633,3.633,0,0,0,3.633,3.633h10.14A3.633,3.633,0,0,0,184,396.021V390.84Z" transform="translate(-155.066 -345.548)" fill="#6d8591"/>
+      <path id="Path_434" data-name="Path 434" d="M173.674,405.447H155.88a1.014,1.014,0,1,0-.053,2.028h17.847a1.014,1.014,0,0,0,.053-2.028Z" transform="translate(-144.674 -358.462)" fill="#123f57"/>
+      <path id="Path_435" data-name="Path 435" d="M178.821,437.58H162.127a1.014,1.014,0,0,0,0,2.028h16.695a1.014,1.014,0,0,0,0-2.028Z" transform="translate(-150.243 -386.872)" fill="#123f57"/>
+      <path id="Path_436" data-name="Path 436" d="M107.557,18.076A20.221,20.221,0,1,0,71.716,32.9a26.514,26.514,0,0,1,5.225,11.04,2.041,2.041,0,0,0,2,1.6H96.011A2.038,2.038,0,0,0,98,43.986,31.086,31.086,0,0,1,103.562,32.4a20.13,20.13,0,0,0,3.994-14.324Z" transform="translate(-67.226 0)" fill="#fcdcb6"/>
+      <g id="Group_389" data-name="Group 389" transform="translate(14.934 17.184)">
+        <path id="Path_437" data-name="Path 437" d="M206.577,153.581a5.291,5.291,0,1,1,0-.005Z" transform="translate(-195.99 -148.288)" fill="#eab54e"/>
+        <path id="Path_438" data-name="Path 438" d="M229.411,208.2h2.841v21.422h-2.841Z" transform="translate(-225.538 -201.257)" fill="#eab54e"/>
+      </g>
+    </g>
+  </g>
+</svg>

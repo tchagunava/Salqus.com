@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/main.css">
+    <link rel="stylesheet" href="resources/css/reset.css">
+    <title>Salqus</title>
+    <link rel="icon" href="resources/icons/Layer 2.svg" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main_head" id="main">
+        <div class="header">
+            <div class="head_nav">
+                <div class="h-logo">
+                    <a href="index.html"><img src="resources/icons/Layer 1.svg" alt=""></a>
+                </div>
+                <div class="navigation">
+                    <div class="NavBar">
+                        <ol class="NavOl">
+                            <li><a href="about.html">ABOUT US</a></li>
+                            <li><a href="service.html">SERVICES</a></li>
+                            <li>
+                                <a onclick="myFunction()" class="dropbtn" id="insights">INSIGHTS ▾</a>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="case.html">CASE STUDY</a>
+                                    <a href="blog.html">BLOG</a>
+                                </div>
+                            </li>
+                            <li><a href="FAQ.html">FAQ</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ol>
+                    </div>
+                    <div class="social">
+                        <div class="soc_group">
+                            <a href="">
+                                <div class="SocNav1"></div>
+                            </a>
+                            <a href="">
+                                <div class="SocNav2"></div>
+                            </a>
+                            <a href="">
+                                <div class="SocNav3"></div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="lang">
+                        <a onclick="myFunctionlng()" class="dropbtn" id="language">ENG ▾</a>
+                        <div id="myDropdownlng" class="dropdown-content lan_geo">
+                            <a href="#">GEO</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="burger_style" onclick="myFunctionbrg()" id="box">
+                <div class="burger_menu">
+                    <div class="line1"></div>
+                    <div class="line2" id="box1"></div>
+                    <div class="line3" id="box2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="main_info">
+            <div class="info_content">
+                <h2>LOREM ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua.</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                    et ea rebum. Stet.</p>
+                <button>READ MORE</button>
+                <div class="scroll">
+                    <div class="arrow"><img src="resources/icons/Path 407.svg" alt=""></div>
+                    <a href="#main_container">
+                        SCROLL DOWN <br />
+                        <p>TO EXPLORE MORE</p>
+                    </a>
+                </div>
+                <div class="contact-btns">
+                    <div class="contact-info">
+                        <p>CALL US</p>
+                        <a>+995 599 987 654</a>
+                    </div>
+                    <div class="call_icon">
+                        <img src="resources/icons/Group 339.svg" alt="" class="call_1">
+                        <img src="resources/icons/phone.svg" alt="" class="call_2">
+                        <img src="resources/icons/hovered/x.svg" alt="" class="call_3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main_container" id="main_container">
+        <div class="about_us">
+            <div class="about_info">
+                <h2 class="unhide">About Us</h2>
+                <p>Salqus is a newly established start-up company founded in 2020. Our aim is to support local and
+                    international companies successfully achievebusiness and commercial goals by providing complete
+                    commercial, sales andmarketing outsourcing services. We manage <span>YOUR</span> business locally in
+                    Georgia,
+                    virtually creating your own office oracting as your agent / partner, thus facilitating a rapid,
+                    effective and highly efficientestablishment and route to market.</p>
+                <a href="about.html"><button>READ MORE</button></a>
+            </div>
+            <div class="about_media">
+                <img src="resources/photos/picture.svg" alt="">
+                <div class="about_cube1"></div>
+                <div class="about_cube2"></div>
+                <div class="about_cube3"></div>
+            </div>
+            <h2 class="hide">About Us</h2>
+        </div>
+        <div class="service_name">
+            <h2>Top Services</h2>
+        </div>
+        <div class="top_service">
+            <div class="sales_outsoursing">
+                <div class="main_sales"></div>
+                <div class="sales_text">
+                    <h3>Sales Outsourcing</h3>
+                    <p>Hiring dedicated staff to build and manage your business is costly, whereas thereturn on
+                        investment is still unknown. Also, training new staff and obtaining theappropriate contacts and
+                        market knowledge can be a time and resource consumingprocess.
+                        We help companies extend their reach in different small markets, such asGeorgia by providing
+                        expert, sales outsourcing services. We are proposing anefficient alternative for your successful
+                        business. </p>
+                    <a href="sales.html"><button>READ MORE</button></a>
+                </div>
+                <div class="media_sales">
+                    <img src="resources/photos/busy-woman-doing-many-things-at-the-same-time.svg" alt="">
+                    <div class="sales_cube"></div>
+                </div>
+            </div>
+            <div class="marketing_outsoursing">
+                <div class="main_marketing"></div>
+                <div class="marketing_text">
+                    <h3>Marketing Outsourcing</h3>
+                    <p>In a competitive environment, companies need the best in the business, andmarketing is no longer
+                        a luxury: it’s a necessary and essential element of your work.To avoid making costly mistakes,
+                        and mark out a route to success, put yourmarketing in the hands of experts.</p>
+                    <a href="marketing.html"><button>READ MORE</button></a>
+                </div>
+                <div class="media_marketing">
+                    <img src="resources/photos/busy-woman-doing-many-things-at-the-same-time.svg" alt="">
+                    <div class="marketing_cube"></div>
+                </div>
+            </div>
+            <div class="b2b">
+                <div class="main_b2b"></div>
+                <div class="b2b_text">
+                    <h3>B2B Negotiantions</h3>
+                    <p>Hiring dedicated staff to build and manage your business is costly, whereas thereturn on
+                        investment is still unknown. Also, training new staff and obtaining theappropriate contacts and
+                        market knowledge can be a time and resource consumingprocess.
+                        We help companies extend their reach in different small markets, such asGeorgia by providing
+                        expert, sales outsourcing services. We are proposing anefficient alternative for your successful
+                        business. </p>
+                    <a href="b2b.html"><button>READ MORE</button></a>
+                </div>
+                <div class="media_b2b">
+                    <img src="resources/photos/busy-woman-doing-many-things-at-the-same-time.svg" alt="">
+                    <div class="b2b_cube"></div>
+                </div>
+            </div>
+            <div class="all_services">
+                <a href="service.html"><button>ALL SERVICES</button></a>
+            </div>
+        </div>
+
+        <div class="charts">
+            <h2 class="hide1">Chart</h2>
+            <div class="chart_content">
+                <div class="content_list">
+                    <h3 class="hide">Chart</h3>
+                    <div class="card">
+                        <img src="resources/icons/magnifying-glass.svg" alt="">
+                        <div class="card_text">
+                            <h3>01. <span>Investigation</span></h3>
+                            <p>We draw from our own extensive experience, perform in-depth research, and can audit your
+                                sales calls in order to gain a full understanding of your vertical, competitive
+                                landscape,
+                                and the language of your buyers.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="resources/icons/Group 390.svg " alt="">
+                        <div class="card_text">
+                            <h3>02. <span>Preparation</span></h3>
+                            <p>We collaborate wit you to develop elevator pitches and add to you current pitches, in
+                                order to best convey your unique value proposition and present your product of service
+                                as the solution to customer pain points.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="resources/icons/light-bulb (2).svg" alt="">
+                        <div class="card_text">
+                            <h3>03. <span>Initiation</span></h3>
+                            <p>Time is money, and we waste none getting started. We continuously refine our messaging
+                                and approach as we speak with your buyers, learn more about them, and start closing
+                                deals.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="resources/icons/check.svg" alt="">
+                        <div class="card_text">
+                            <h3>04. <span>Evaluation</span></h3>
+                            <p>We provide comprehensive real-time reports and hold biweekly meetings to give context and
+                                transparency into our efforts, as well as ensure consistent improvement and results.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer_contact">
+                <ul>
+                    <li>Have a question?</li>
+                    <li>Contact Us</li>
+                    <li><img src="resources/icons/phone-fill.svg" alt="">+995 571 414747</li>
+                    <li><img src="resources/icons/mail-fill.svg" alt="">tiko.mirtskhulava@salqus.com</li>
+                    <li><img src="resources/icons/map-pin-2-fill.svg" alt="">0161 Tbilisi Georgia</li>
+                </ul>
+                <div class="footer_text">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut
+                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores
+                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        Lorem.</p>
+                    <a href="https://www.google.com/maps/@41.6908379,44.8060008,18z">See full map</a>
+                </div>
+                <div class="scroll_up">
+                    <a href="#main"><img src="resources/icons/Group 286.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer_end">
+                <div class="footer_icons">
+                    <img src="resources/photos/Layer 1.png" alt="">
+                    <a href="" style="text-decoration:none">
+                        <p>Created by SmartWeb</p>
+                    </a>
+                </div>
+                <div class="footer_social">
+                    <a href=""><img src="resources/icons/facebook-box-fill.svg" alt=""></a>
+                    <a href=""><img src="resources/icons/instagram-fill.svg" alt=""></a>
+                    <a href=""><img src="resources/icons/youtube-fill.svg" alt=""></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="burger-menu" id="myLinks">
+        <div class="burger-menu__nav">
+            <ul>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="service.html">SERVICES</a></li>
+                <li><a href="case.html">CASE STUDY</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a onclick="myFunctionlng1()" class="dropbtn">ENG <span style="margin-left: 375px;">▾</span></a>
+                    <div id="myDropdownlng1" class="dropdown-content lan_geo">
+                        <a href="#">GEO</a>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="burger-menu__icons">
+                <a href=""><img src="resources/icons/facebook-box-fill.svg" alt=""></a>
+                <a href=""><img src="resources/icons/instagram-fill.svg" alt=""></a>
+                <a href=""><img src="resources/icons/youtube-fill.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="resources/js/dropdown.js"></script>
+<script src="resources/js/load.js"></script>
+<script src="resources/js/burger.js"></script>
+<script src="resources/js/burgericon.js"></script>
+
+</html>

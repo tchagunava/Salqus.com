@@ -1,0 +1,832 @@
+
+@font-face {
+    font-family: 'Neue Haas Unica-light';
+    src: url('../fonts/NeueHaasUnica-Light.ttf');
+    font-style: normal;
+    
+}
+
+
+@font-face {
+    font-family: 'Neue Haas Unica-extra';
+    src: url('../fonts/NeueHaasUnica-ExtraLight.ttf');
+
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica-extraBold';
+    src: url('../fonts/NeueHaasUnica-ExtraBold.ttf');
+
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica-black';
+    src: url('../fonts/NeueHaasUnica-Black.ttf');
+
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica-bold';
+    src: url('../fonts/NeueHaasUnica-Bold.ttf');
+
+}
+
+
+@font-face {
+    font-family: 'Neue Haas Unica-normal';
+    src: url('../fonts/NeueHaasUnica-Regular.ttf');
+
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.main_head {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 40vh;
+    background:linear-gradient(to right, rgb(12 29 82 / 72%), rgb(4 0 35 / 62%)), url(../photos/photo_bg.png) center center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+.main_head:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:linear-gradient( rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0.1)100%);
+  }
+
+.header {
+    background: linear-gradient(#000000, #0018);
+    width: 100%;
+    height: 104px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+}
+
+.head_nav {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        justify-content: space-between;
+  }
+
+.h-logo {
+    cursor: pointer;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.NavOl {
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+}
+
+.NavOl li a {
+    font-family: "Neue Haas Unica-light";
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    margin-left: 45px;
+    /* display: block; */
+}
+
+.NavOl li a:hover {
+    color: #00BFFF;
+}
+
+
+.dropdown-content {
+    visibility: hidden;
+    position: absolute;
+    overflow: auto;
+    z-index: 1;
+    background: linear-gradient(#000000, #0018);
+    border-radius: 5px;
+    width: 150px;
+    height: 100px;
+    transition: visibility 1s, opacity 0.5s linear;
+    opacity: 0;
+  }
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    height: 20px;
+  }
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.social {
+    display: flex;
+    width: 250px;
+    height: 21px;
+    justify-content: space-evenly;
+}
+
+.soc_group {
+    display: flex;
+    width: 190px;
+    justify-content: space-around;
+    border-left: 1px solid #707070;
+    border-right: 1px solid #707070;
+
+}
+
+.soc_group a {
+    display: flex;
+}
+
+.SocNav1 {
+    background: url(../icons/facebook-box-fill.svg) no-repeat;
+    cursor: pointer;
+    display: flex; 
+    width: 21px;
+    
+}
+
+.SocNav1:hover {
+    background: url(../icons/hovered/facebook-box-fill.svg) no-repeat;
+    transition: 0.5s;
+}
+
+
+
+.SocNav2 {
+    background: url(../icons/youtube-fill.svg);
+    cursor: pointer;
+    display: flex; 
+    width: 21px;
+
+}
+
+.SocNav2:hover {
+    background: url(../icons/hovered/youtube-fill.svg) no-repeat;
+    transition: 0.5s;
+}
+
+
+
+.SocNav3 {
+    background: url(../icons/instagram-fill.svg);
+    cursor: pointer;
+    display: flex; 
+    width: 21px;
+}
+
+.SocNav3:hover {
+    background: url(../icons/hovered/instagram-fill.svg) no-repeat; 
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1124px) {
+    .head_nav {
+      width: unset;
+    }
+  }
+
+
+@media screen and (max-width: 1024px) {
+    .navigation {
+      display: none;
+    }
+
+    .head_nav {
+        width: 90%;
+      }
+    }
+  
+
+    @media screen and (max-width: 500px) {
+        .head_nav {
+            width: 80%;
+        }
+    
+        .head_nav img {
+            width: 146px;
+        
+        }
+    }
+
+.lang {
+    display: flex;
+    align-items: center;
+}
+
+.lang a {
+    text-decoration: none;
+    color: white;
+    font-family: "Neue Haas Unica-light";
+    font-size: 14px;
+    padding-left: 7px;
+}
+
+.lan_geo {
+    margin-top: 72px;
+    width: 43px;
+    height: 50px;
+    text-align: center;
+}
+
+.lan_geo a {
+    padding: initial;
+}
+
+.lang a:hover {
+    cursor: pointer;
+    color: #00BFFF;
+}
+
+.main_info {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+
+.info_content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 130px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info_content h2 {
+    /* height: 280px; */
+    /* width: 384px; */
+    font-size: 44px;
+    color: white;
+    overflow: hidden;
+    font-family: 'Neue Haas Unica-extra';
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.info_category {
+    display: flex;
+    padding-top: 60px;
+    z-index: 1;
+    width: 114px;
+    justify-content: space-between;
+}
+
+.info_category a {
+    opacity: 30%;
+    transition: opacity 0.5s;
+}
+
+.info_category a:hover {
+    opacity: 1;
+}
+
+.info_content p {
+    font-size: 12px;
+    color: white;
+    overflow: hidden;
+    /* width: 592px; */
+    line-height: 1.5;
+    font-family: 'Neue Haas Unica-light';
+   }
+
+.contact-btns {
+    display: flex;
+    position: fixed;
+    bottom: 55px;
+    left: 92%;
+    cursor: pointer;
+    align-items: center;
+
+  }
+
+.contact-info {
+    visibility: hidden;
+    position: absolute;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 50px;
+    height: 56px;
+    margin-bottom: 3px;
+    transition: width 0.5s, height 4s, visibility 0s, opacity 0.3s linear;
+    z-index: -1;
+    opacity: 0;
+    top:-4; right:0; 
+}
+
+.contact-info p {
+    color: #00BFFF;
+    font-size: 14px;
+    font-family: 'Neue Haas Unica-normal';
+}
+
+.contact-info a {
+    text-decoration: none;
+    font-size: 18px;
+    width: 140px;
+    display: block;
+}
+
+/* .contact-btns:hover .contact-info {
+    visibility: visible;
+    width: 248px;
+    height: 56px;
+    opacity: 1;
+}
+
+.contact-btns:hover .call_2 {
+    visibility: hidden;
+    opacity: 0;
+    transform: rotate(150deg);
+}
+
+.contact-btns:hover .call_3 {
+    visibility: visible;
+    opacity: 1;
+} */
+
+.call_icon {
+    z-index: 2;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.call_2 {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    opacity: 1;
+    transition: visibility 0.5s, opacity 0.4s linear, transform 0.3s;
+
+}
+
+.call_3 {
+    visibility: hidden;
+    position: absolute;
+    top: 15px;
+    left: 16px;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.4s linear;
+}
+
+.main_container {
+    display: flex;
+    width: 100%;
+    height: 650px;
+    justify-content: center;
+    flex-direction: column;
+    background: url(../photos/Rectangle\ 207.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 60px;
+}
+
+.contact {
+    display: flex;
+    width: 360px;
+    height: 442px;
+    margin-left: 56px;
+    border-radius: 48px 24px 240px 24px;
+    /* z-index: 1; */
+    background-color: #FFFFFF;
+    /* transform: rotate(180deg); */
+    backdrop-filter: blur(7px);
+    opacity: 70%;
+    flex-direction: column;
+    padding-left: 32px;
+    padding-top: 30px;
+    
+}
+
+.contact ul {
+    width: 100%;
+}
+.contact li {
+    display: flex;
+    font-family:'Neue Haas Unica-normal' ;
+    color: #6D8591;
+    font-size: 16px;
+    line-height: 35px;
+
+}
+
+.contact li:first-child {
+    font-family: 'Neue Haas Unica-black';
+    font-size: 28px;
+    line-height: 63px;
+    color: #0C547A;
+    opacity: 100% !important;
+}
+
+.contact li img {
+    margin-right: 10px;
+    z-index: 1;
+}
+
+.contact_work {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 150px;
+    color: #6D8591;
+    font-family:'Neue Haas Unica-normal';
+    font-size: 16px;
+}
+
+.contact_work a {
+    color: #123F57;
+}
+
+
+
+footer {
+    background: linear-gradient(to left, rgb(149 149 149 / 46%), rgb(68 44 179));
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 87px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-top: 50px !important; */
+ 
+}
+
+
+.footer_contact {
+    display: flex;;
+    width: 90%;
+}
+
+.footer_contact ul {
+    width: 33%;
+}
+
+.footer_contact li {
+    display: flex;
+    font-family:'Neue Haas Unica-normal' ;
+    color: white;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 5px;
+
+}
+
+.footer_contact li img {
+    margin-right: 10px;
+}
+
+.footer_contact li:nth-child(2) {
+    font-family: 'Neue Haas Unica-black';
+    font-size: 42px;
+    line-height: 63px;
+    margin-bottom: 20px;
+}
+
+.footer_text {
+    width: 58%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_text p {
+    font-family:'Neue Haas Unica-normal' ;
+    color: white;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.footer_text a {
+    color: white;
+    font-family:'Neue Haas Unica-normal' ;
+}
+
+.scroll_up {
+    display: none;
+    color: white;
+
+}
+
+.footer_contact a img {
+    width: 32px;
+    height: 32px;
+}
+
+.footer_end {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.footer_icons {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_end p {
+    font-family:'Neue Haas Unica-bold';
+    color: white;
+    font-size: 18px;
+}
+
+.footer_social {
+    display: flex;
+    width: 168px;
+    justify-content: space-between;
+
+}
+
+.footer_social img {
+    width: 30px;
+}
+
+@media screen and (max-width: 500px) {
+
+    .main_container {
+        height: 925px;
+    }
+
+    .main_section {
+        margin-top: 30px;
+    }
+
+    .contact-btns {
+        top: 26px;
+        left: 70%;
+        bottom: unset;
+        z-index: 2;
+     }
+ 
+     .call_1 {
+         width: 40px;
+     }
+ 
+     .call_2 {
+        top: 8px;
+        left: 9px;
+     }
+
+     .main_head {
+        height: 30vh;
+    }
+
+    .info_content h2 {
+       display: none;
+   }
+
+   .contact {
+    margin-left: 10px;
+    width: 253px;
+    height: 458px;
+   }
+
+   .contact li:first-child {
+    font-size: 20px;
+  }
+
+  .contact li {
+      font-size: 12px;
+  }
+
+  .contact_work p {
+      font-size: 14px;
+  }
+
+  footer {
+      height: 324px;
+      /* margin-top: 107px !important; */
+      background: linear-gradient(to top, rgb(149 149 149 / 46%), rgb(68 44 179));
+  }
+
+  .footer_end {
+      flex-direction: column-reverse;
+      align-items: center;
+      height: 70%;
+  }
+
+  .scroll_up {
+      display: flex;
+  }
+
+   .footer_icons {
+      width: 100%;
+   }
+
+   .footer_social {
+    width: 100%;
+    height: 20%;
+    justify-content: space-evenly;
+   }
+
+   .footer_social img {
+    width: 40px;
+}
+
+   .lan_geo {
+    margin-top: unset;
+    width: 90%;
+    height: unset;
+    text-align: center;
+ }
+
+
+
+}
+
+@media screen and (min-width: 501px) {
+
+    .contact-btns:hover .contact-info {
+        visibility: visible;
+        width: 248px;
+        height: 56px;
+        opacity: 1;
+    }
+    
+    .contact-btns:hover .call_2 {
+        visibility: hidden;
+        opacity: 0;
+        transform: rotate(150deg);
+    }
+    
+    .contact-btns:hover .call_3 {
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+}
+
+/* burger menu */
+
+.burger_style {
+    display: flex;
+    z-index: 3;
+    /* justify-content: space-between; */
+    /* position: absolute; */
+    z-index: 3;
+    display: flex;
+    height: 96px;
+    align-items: center;
+  
+  }
+  
+  .burger_menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    height: 20px;
+    /* display: block; */
+    align-items: flex-end;
+  }
+
+  .line1 {
+      width: 28px;
+      background-color: white;
+      border:1px solid white;
+      transition: 1s;
+  }
+
+  .line2 {
+    width: 28px;
+    background-color: white;
+    border:1px solid white;
+    transition: 1s;
+}
+
+.line3 {
+    width: 28px;
+    border:1px solid white;
+    background-color: white;
+}
+
+.clicked {
+    width: 7px;
+}
+
+.clicked1 {
+    width: 13px;
+}
+
+  
+  @media (max-width: 1024px) {
+    .burger_menu {
+      display: flex;
+    }
+  }
+  
+  
+  
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 0;
+    height: calc(100vh - 104px);
+    bottom: 0;
+    right: 0;
+    background-color: #000000;
+    /* padding: 35px 16px 35px 16px; */
+    z-index: 20;
+    transition: 0.7s ease;
+    backdrop-filter: blur(10px);
+    opacity: 70%;
+    overflow: hidden;
+  }
+  
+  .burger-menu__nav {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 80%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    
+  }
+  
+  .burger-menu__nav ul {
+    width: 100%;
+    
+  }
+  
+  .burger-menu__nav ul li {
+    list-style-type: none;
+  }
+  
+  .burger-menu__nav ul li a {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Neue Haas Unica-normal';
+    font-size: 16px;
+    color: #FFFFFF;
+    opacity: unset;
+    padding-left: 15px;
+  }
+  
+  .burger-menu__nav ul li a:hover {
+    background: #919090;
+    border: 1px solid white;
+    transition: 0.9s;
+    cursor: pointer;
+  }
+  
+  .burger-menu__icons {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    height: 36px;
+  }
+  
+.burger-menu__icons img {
+    width: 36px;
+    height: 36px;
+}

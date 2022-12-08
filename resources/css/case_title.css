@@ -1,0 +1,1101 @@
+
+@font-face {
+    font-family: 'Neue Haas Unica-light';
+    src: url('../fonts/NeueHaasUnica-Light.ttf');
+    font-style: normal;
+    
+}
+
+
+@font-face {
+    font-family: 'Neue Haas Unica-extra';
+    src: url('../fonts/NeueHaasUnica-ExtraLight.ttf');
+
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica-extraBold';
+    src: url('../fonts/NeueHaasUnica-ExtraBold.ttf');
+
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica-black';
+    src: url('../fonts/NeueHaasUnica-Black.ttf');
+
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica-bold';
+    src: url('../fonts/NeueHaasUnica-Bold.ttf');
+
+}
+
+
+@font-face {
+    font-family: 'Neue Haas Unica-normal';
+    src: url('../fonts/NeueHaasUnica-Regular.ttf');
+
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.main_head {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 40vh;
+    background:linear-gradient(to right, rgb(12 29 82 / 72%), rgb(4 0 35 / 62%)), url(../photos/photo_bg.png) center center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+.main_head:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:linear-gradient( rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0.1)100%);
+  }
+
+.header {
+    background: linear-gradient(#000000, #0018);
+    width: 100%;
+    height: 104px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+}
+
+.head_nav {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        justify-content: space-between;
+  }
+
+.h-logo {
+    cursor: pointer;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.NavOl {
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+}
+
+.NavOl li a {
+    font-family: "Neue Haas Unica-light";
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    margin-left: 45px;
+    /* display: block; */
+}
+
+.NavOl li a:hover {
+    color: #00BFFF;
+}
+
+
+.dropdown-content {
+    visibility: hidden;
+    position: absolute;
+    overflow: auto;
+    z-index: 1;
+    background: linear-gradient(#000000, #0018);
+    border-radius: 5px;
+    width: 150px;
+    height: 100px;
+    transition: visibility 1s, opacity 0.5s linear;
+    opacity: 0;
+  }
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    height: 20px;
+  }
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.social {
+    display: flex;
+    width: 250px;
+    height: 21px;
+    justify-content: space-evenly;
+}
+
+.soc_group {
+    display: flex;
+    width: 190px;
+    justify-content: space-around;
+    border-left: 1px solid #707070;
+    border-right: 1px solid #707070;
+
+}
+
+.soc_group a {
+    display: flex;
+}
+
+.SocNav1 {
+    background: url(../icons/facebook-box-fill.svg) no-repeat;
+    cursor: pointer;
+    display: flex; 
+    width: 21px;
+    
+}
+
+.SocNav1:hover {
+    background: url(../icons/hovered/facebook-box-fill.svg) no-repeat;
+    transition: 0.5s;
+}
+
+
+
+.SocNav2 {
+    background: url(../icons/youtube-fill.svg);
+    cursor: pointer;
+    display: flex; 
+    width: 21px;
+
+}
+
+.SocNav2:hover {
+    background: url(../icons/hovered/youtube-fill.svg) no-repeat;
+    transition: 0.5s;
+}
+
+
+
+.SocNav3 {
+    background: url(../icons/instagram-fill.svg);
+    cursor: pointer;
+    display: flex; 
+    width: 21px;
+}
+
+.SocNav3:hover {
+    background: url(../icons/hovered/instagram-fill.svg) no-repeat; 
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1124px) {
+    .head_nav {
+      width: unset;
+    }
+  }
+
+
+@media screen and (max-width: 1024px) {
+    .navigation {
+      display: none;
+    }
+
+    .head_nav {
+        width: 90%;
+      }
+    }
+  
+
+@media screen and (max-width: 500px) {
+    .head_nav {
+        width: 80%;
+    }
+
+    .head_nav img {
+        width: 146px;
+    
+    }
+}
+
+.lang {
+    display: flex;
+    align-items: center;
+}
+
+.lang a {
+    text-decoration: none;
+    color: white;
+    font-family: "Neue Haas Unica-light";
+    font-size: 14px;
+    padding-left: 7px;
+}
+
+.lan_geo {
+    margin-top: 72px;
+    width: 43px;
+    height: 50px;
+    text-align: center;
+}
+
+.lan_geo a {
+    padding: initial;
+}
+
+.lang a:hover {
+    cursor: pointer;
+    color: #00BFFF;
+}
+
+.main_info {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+
+.info_content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 130px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info_content h2 {
+    /* height: 280px; */
+    /* width: 384px; */
+    font-size: 44px;
+    color: white;
+    overflow: hidden;
+    font-family: 'Neue Haas Unica-extra';
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.info_category {
+    display: flex;
+    padding-top: 60px;
+    z-index: 1;
+    width: 245px;
+    justify-content: space-between;
+}
+
+.info_category a {
+    opacity: 30%;
+    transition: opacity 0.5s;
+}
+
+.info_category a:hover {
+    opacity: 1;
+}
+
+.info_content p {
+    font-size: 12px;
+    color: white;
+    overflow: hidden;
+    /* width: 592px; */
+    line-height: 1.5;
+    font-family: 'Neue Haas Unica-light';
+   }
+
+.contact-btns {
+    display: flex;
+    position: fixed;
+    bottom: 55px;
+    left: 92%;
+    cursor: pointer;
+    align-items: center;
+
+  }
+
+.contact-info {
+    visibility: hidden;
+    position: absolute;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 50px;
+    height: 56px;
+    margin-bottom: 3px;
+    transition: width 0.5s, height 4s, visibility 0s, opacity 0.3s linear;
+    z-index: -1;
+    opacity: 0;
+    top:-4; right:0; 
+}
+
+.contact-info p {
+    color: #00BFFF;
+    font-size: 14px;
+    font-family: 'Neue Haas Unica-normal';
+}
+
+.contact-info a {
+    text-decoration: none;
+    font-size: 18px;
+    width: 140px;
+    display: block;
+}
+
+/* .contact-btns:hover .contact-info {
+    visibility: visible;
+    width: 248px;
+    height: 56px;
+    opacity: 1;
+}
+
+.contact-btns:hover .call_2 {
+    visibility: hidden;
+    opacity: 0;
+    transform: rotate(150deg);
+}
+
+.contact-btns:hover .call_3 {
+    visibility: visible;
+    opacity: 1;
+} */
+
+.call_icon {
+    z-index: 2;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.call_2 {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    opacity: 1;
+    transition: visibility 0.5s, opacity 0.4s linear, transform 0.3s;
+
+}
+
+.call_3 {
+    visibility: hidden;
+    position: absolute;
+    top: 15px;
+    left: 16px;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.4s linear;
+}
+
+.main_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section {
+    display: flex;
+    margin-top: 110px;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.sales_outsoursing {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.main_sales {
+    display: flex;
+    width: 936px;
+    height: 185px;
+    background-color: #00BFFF;
+    border-radius: 12px 142px 29px 29px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: width 1s, border-radius 1s;
+    position: absolute;
+    opacity: 7%;
+}
+
+
+.sales_text {
+    display: flex;
+    justify-content: space-evenly;
+    width: 950px;;
+    /* height: 410px; */
+    z-index: 0;
+    /* margin-left: 100px; */
+    margin-top: 50px;
+    text-align: -webkit-match-parent;
+}
+
+
+
+.sales_text p {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Neue Haas Unica-light';
+    color: #6D8591;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.sales_text span {
+    margin-top: 15px;
+}
+
+.media_sales {
+    margin-right: -195px;
+}
+
+.media_sales img {
+    width: 264px;
+    height: 212px;
+    transition: width 0.6s cubic-bezier(0, 0, 1, 1.01), height 0.6s cubic-bezier(0, 0, 1, 0.98), transform 1s;
+}
+
+.provide {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.provide_text {
+    width: 600px;
+    display: flex;
+    margin-right: 140px;
+}
+
+.provide p {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Neue Haas Unica-light';
+    color: #6D8591;
+    display: flex;
+    flex-direction: column;
+    margin-top: -50px;
+}
+
+.provide span {
+    margin-top: 15px;
+    
+}
+
+.card_section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.card_section h3 {
+    font-size: 28px;
+    color: #0C547A;
+    font-weight: bold;
+    font-family: 'Neue Haas Unica-black';
+   
+}
+
+.card_header {
+    display: flex;
+    flex-direction: column;
+    width: 950px;
+    margin-left: 200px;
+}
+
+.card_head {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.next_prev {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cards {
+    display: flex;
+    width: 935px;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.cards h5 {
+    font-size: 18px;
+    color: #123F57;
+    font-family: 'Neue Haas Unica-normal';
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 296px;
+    height: 371px;
+    background-color: #C0EFFF;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.card img {
+    width: 276px;
+    height: 223px;
+    border-radius: 10px;
+}
+
+.card button {
+    width: 120px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+    color: #00BFFF;
+    outline: none;
+}
+
+.card button:hover {
+    cursor: pointer;
+    box-shadow: 0 0.5em 1.5em -0.4em #00BFFF;
+    transform: translateY(-0.25em);
+    transition: 0.5s;
+
+}
+
+#carousel {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    margin-left: 200px;
+  }
+  
+  #carousel::-webkit-scrollbar {
+    height: 0;
+  }
+  
+  #prev,
+  #next {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    /* background: rgb(53, 4, 4); */
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    /* position: absolute; */
+  }
+  
+  
+  #content {
+    display: grid;
+    grid-gap: 16px;
+    grid-auto-flow: column;
+    box-sizing: border-box;
+    
+  }
+
+  .hide {
+      display: none;
+      margin-top: 45px;
+
+  }
+
+footer {
+    background-image: linear-gradient(to left, rgb(149 149 149 / 46%), rgb(68 44 179)),  url(../photos/Rectangle\ 206.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 413px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px !important;
+}
+
+
+.footer_contact {
+    display: flex;;
+    width: 90%;
+}
+
+.footer_contact ul {
+    width: 33%;
+}
+
+.footer_contact li {
+    display: flex;
+    font-family:'Neue Haas Unica-normal' ;
+    color: white;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 5px;
+
+}
+
+.footer_contact li img {
+    margin-right: 10px;
+}
+
+.footer_contact li:nth-child(2) {
+    font-family: 'Neue Haas Unica-black';
+    font-size: 42px;
+    line-height: 63px;
+    margin-bottom: 20px;
+}
+
+.footer_text {
+    width: 58%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_text p {
+    font-family:'Neue Haas Unica-normal' ;
+    color: white;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.footer_text a {
+    color: white;
+    font-family:'Neue Haas Unica-normal' ;
+}
+
+.scroll_up {
+    width: 13%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+
+}
+
+.footer_contact a img {
+    width: 32px;
+    height: 32px;
+}
+
+.footer_end {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.footer_icons {
+    width: 42%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_social img {
+    width: 30px;
+}
+
+
+@media screen and (max-width: 1680px) {
+    .footer_icons {
+        width: 44%;
+    }
+}
+
+@media screen and (max-width: 1480px) {
+    .footer_icons {
+        width: 46%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .footer_icons {
+        width: 46%;
+    }
+}
+
+
+.footer_end p {
+    font-family:'Neue Haas Unica-bold';
+    color: white;
+    font-size: 18px;
+}
+
+.footer_social {
+    display: flex;
+    width: 168px;
+    justify-content: space-between;
+
+}
+
+@media screen and (max-width: 1024px) {
+    .footer_icons {
+        width: 52%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contact-btns {
+        top: 26px;
+        left: 70%;
+        bottom: unset;
+        z-index: 2;
+     }
+ 
+     .call_1 {
+         width: 40px;
+     }
+ 
+     .call_2 {
+        top: 8px;
+        left: 9px;
+     }
+     .main_head {
+         height: 30vh;
+     }
+
+     .info_content h2 {
+        display: none;
+    }
+
+    .section {
+        width: 90%;
+        margin-top: unset;
+             
+    }
+
+    .sales_outsoursing {
+        height: 536px;
+        align-items: center;
+        flex-direction: column;
+    }
+ 
+    .main_sales {
+        width: 354px;
+        height: 413px; 
+        border-radius: 12px 142px 29px 29px;
+    }
+ 
+   
+    .sales_text {     
+        width: 314px;
+        z-index: 0;
+        margin-left: 0px;
+        margin-top: unset;
+        flex-direction: column-reverse;
+    }
+ 
+ 
+    .sales_text p {
+        /* height: 146px; */
+        overflow: hidden;
+        width: unset;
+        margin-top: 20px;
+        margin-right: unset;
+        line-height: 30px;
+    }
+ 
+    .media_sales {
+        margin-left: 0px;
+        margin-top: -80px;
+        width: 313px;
+    }
+ 
+    .media_sales img {
+        width: 233px;
+        height: 187px;
+    }
+
+    .provide {
+        margin-top: unset;
+    }
+
+    .provide h3 {
+        font-size: 20px;
+    }
+
+    .provide_text {
+        width: 100%;
+        margin-right: unset;
+    }
+
+    .provide p {
+        width: unset;
+    }
+
+    .provide_list {
+        width: 100%;
+    }
+
+    .provide_list li {
+        font-size: 14px;
+        line-height: 42px;
+    }
+
+    .card_section {
+        margin-top: 70px;
+    }
+
+    .card_header {
+        width: 100%;
+        margin-left: unset;
+    }
+
+    .card_header h3 {
+        font-size: 20px
+    }
+
+    .next_prev {
+        display: none;
+    }
+
+    #carousel {
+        width: 100%;
+        margin-left: unset;
+        /* margin-top: 30px; */
+    }
+
+    .hide {
+        display: flex;
+    }
+
+
+    footer {
+        height: 900px;
+        background-position: center;
+        background-image: linear-gradient(to top, rgb(149 149 149 / 46%), rgb(51 33 138)), url(../photos/Rectangle\ 206.png);
+    }
+ 
+    .footer_contact {
+        flex-direction: column;
+        height: 600px;
+        justify-content: space-between;
+    }
+ 
+    .footer_contact ul {
+        width: 90%;
+    }
+ 
+    .footer_text {
+        width: 90%;
+        height: 250px;
+        justify-content: space-around;
+    }
+ 
+    .scroll_up {
+        width: 100%;
+        justify-content: center;
+    }
+ 
+    .footer_end {
+        flex-direction: column-reverse;
+        height: 15%;
+    }
+ 
+    .footer_icons {
+        width: 100%;
+    }
+ 
+    .footer_social {
+        width: 100%;
+        height: 35%;
+        justify-content: space-evenly;
+    }
+
+    .footer_social img {
+        width: 40px;
+    }
+
+    .lan_geo {
+        margin-top: unset;
+        width: 90%;
+        height: unset;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 501px) {
+
+    .contact-btns:hover .contact-info {
+        visibility: visible;
+        width: 248px;
+        height: 56px;
+        opacity: 1;
+    }
+    
+    .contact-btns:hover .call_2 {
+        visibility: hidden;
+        opacity: 0;
+        transform: rotate(150deg);
+    }
+    
+    .contact-btns:hover .call_3 {
+        visibility: visible;
+        opacity: 1;
+    }
+
+}
+
+
+
+
+
+/* burger menu */
+
+.burger_style {
+    display: flex;
+    z-index: 3;
+    /* justify-content: space-between; */
+    /* position: absolute; */
+    z-index: 3;
+    display: flex;
+    height: 96px;
+    align-items: center;
+  
+  }
+  
+  .burger_menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    height: 20px;
+    /* display: block; */
+    align-items: flex-end;
+  }
+
+  .line1 {
+      width: 28px;
+      background-color: white;
+      border:1px solid white;
+      transition: 1s;
+  }
+
+  .line2 {
+    width: 28px;
+    background-color: white;
+    border:1px solid white;
+    transition: 1s;
+}
+
+.line3 {
+    width: 28px;
+    border:1px solid white;
+    background-color: white;
+}
+
+.clicked {
+    width: 7px;
+}
+
+.clicked1 {
+    width: 13px;
+}
+
+  
+  @media (max-width: 1024px) {
+    .burger_menu {
+      display: flex;
+    }
+  }
+  
+  
+  
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 0;
+    height: calc(100vh - 104px);
+    bottom: 0;
+    right: 0;
+    background-color: #000000;
+    /* padding: 35px 16px 35px 16px; */
+    z-index: 20;
+    transition: 0.7s ease;
+    backdrop-filter: blur(10px);
+    opacity: 70%;
+    overflow: hidden;
+  }
+  
+  .burger-menu__nav {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 80%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    
+  }
+  
+  .burger-menu__nav ul {
+    width: 100%;
+    
+  }
+  
+  .burger-menu__nav ul li {
+    list-style-type: none;
+  }
+  
+  .burger-menu__nav ul li a {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Neue Haas Unica-normal';
+    font-size: 16px;
+    color: #FFFFFF;
+    opacity: unset;
+    padding-left: 15px;
+  }
+  
+  .burger-menu__nav ul li a:hover {
+    background: #919090;
+    border: 1px solid white;
+    transition: 0.9s;
+    cursor: pointer;
+    
+  }
+  
+  .burger-menu__icons {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    height: 36px;
+  }
+  
+.burger-menu__icons img {
+    width: 36px;
+    height: 36px;
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="144.4" height="144.371" viewBox="0 0 144.4 144.371">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_7" data-name="Path 7" d="M173.52,164.55a34.16,34.16,0,0,0-9,9H123.13a72.28,72.28,0,0,1,50.39-50.39Zm-13.81,19.66a34.12,34.12,0,0,0,33,42.6h23.41v38.1h-23.4A72.22,72.22,0,0,1,121,184.21Zm33-63.67a72.19,72.19,0,0,1,72.19,72.18v23.49H226.8V192.72a34.12,34.12,0,0,0-42.6-33V121a72.432,72.432,0,0,1,8.52-.46ZM226.8,226.81h38.1v38.1H226.8Z" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.051" y1="0.555" x2="1.082" y2="0.429" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7649fe"/>
+      <stop offset="1" stop-color="#00bfff"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2" transform="translate(-120.5 -120.539)">
+    <g id="Layer_1" data-name="Layer 1">
+      <g id="Group_3" data-name="Group 3" clip-path="url(#clip-path)">
+        <rect id="Rectangle_9" data-name="Rectangle 9" width="144.37" height="144.37" transform="translate(120.54 120.54)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>

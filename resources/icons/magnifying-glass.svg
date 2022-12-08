@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="55.998" viewBox="0 0 56 55.998">
+  <g id="magnifying-glass" transform="translate(0)">
+    <g id="Group_388" data-name="Group 388" transform="translate(11.015 11.015)">
+      <path id="Path_428" data-name="Path 428" d="M43.539,144.263a4.935,4.935,0,0,0,0-6.98L7.461,101.2a1.641,1.641,0,0,0-2.32,0l-4.66,4.66a1.64,1.64,0,0,0,0,2.32l36.079,36.079a4.941,4.941,0,0,0,6.98,0Z" transform="translate(0 -100.724)" fill="#6d8591"/>
+    </g>
+    <path id="Path_429" data-name="Path 429" d="M13.7,128.748a1.64,1.64,0,0,0,0,2.32l36.079,36.079a4.941,4.941,0,0,0,6.98,0L16.027,126.418Z" transform="translate(-2.202 -112.592)" fill="#123f57"/>
+    <ellipse id="Ellipse_20" data-name="Ellipse 20" cx="21.41" cy="21.41" rx="21.41" ry="21.41" transform="translate(0 0)" fill="#c0efff"/>
+    <path id="Path_430" data-name="Path 430" d="M184.177,57.409a21.4,21.4,0,1,0,30.264,30.264Z" transform="translate(-177.899 -51.131)" fill="#00bfff"/>
+    <ellipse id="Ellipse_21" data-name="Ellipse 21" cx="14.82" cy="14.82" rx="14.82" ry="14.82" transform="translate(6.59 6.59)" fill="#e1faff"/>
+    <path id="Path_431" data-name="Path 431" d="M235.3,125.288a14.774,14.774,0,0,0,10.475-4.346L224.828,99.993A14.813,14.813,0,0,0,235.3,125.288Z" transform="translate(-213.892 -89.057)" fill="#c7f5ff"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+  <g id="Group_390" data-name="Group 390" transform="translate(-556 -4117.428)">
+    <path id="Rectangle_192" data-name="Rectangle 192" d="M.863,0H2.415a12.37,12.37,0,0,1,12.37,12.37v0a.863.863,0,0,1-.863.863H.863A.863.863,0,0,1,0,12.37V.863A.863.863,0,0,1,.863,0Z" transform="matrix(0.966, 0.259, -0.259, 0.966, 597.719, 4139.196)" fill="#7649fe"/>
+    <path id="Rectangle_244" data-name="Rectangle 244" d="M7.253,0h5.329a.907.907,0,0,1,.907.907v0a10.88,10.88,0,0,1-10.88,10.88H.907A.907.907,0,0,1,0,10.88V7.253A7.253,7.253,0,0,1,7.253,0Z" transform="matrix(0.966, -0.259, 0.259, 0.966, 583.959, 4162.043)" fill="#00bfff"/>
+    <rect id="Rectangle_294" data-name="Rectangle 294" width="15.531" height="15.531" rx="7.765" transform="matrix(0.966, -0.259, 0.259, 0.966, 583.991, 4121.448)" fill="#c0efff"/>
+    <rect id="Rectangle_295" data-name="Rectangle 295" width="13.083" height="11.337" rx="5" transform="translate(569.687 4165.771) rotate(-120)" fill="#e4dbff"/>
+    <path id="Rectangle_293" data-name="Rectangle 293" d="M7.747,0H18.788a.93.93,0,0,1,.93.93v0a16.3,16.3,0,0,1-16.3,16.3H.93A.93.93,0,0,1,0,16.3V7.747A7.747,7.747,0,0,1,7.747,0Z" transform="matrix(-0.966, 0.259, -0.259, -0.966, 579.505, 4137.455)" fill="#fcdcb6"/>
+  </g>
+</svg>
